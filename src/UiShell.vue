@@ -1,17 +1,14 @@
 <template>
   <div>
-    <UiShell/>
+    <RouterView />
   </div>
 </template>
 
 <script>
 
-import UiShell from './UiShell.vue';
-
 export default {
   components: {
-    UiShell,
   },
-  name: 'App',
+  name: 'UiShell',
 };
 </script>
