@@ -1,5 +1,3 @@
-
-
 <template>
 <div class="container" >
 
@@ -11,57 +9,54 @@
 
     <div>
         <button class="button_entrada">Entrar</button>
-        
+
     </div>
 
     <div class="checkbo_e_paragrafo">
      <input class="chebox_move_direita" type="checkbox" placeholder="Lembre se de mim">
-     <p  class="precisa_de_ajuda"><a>{{ paragrafo}}</a></p>
+     <p  class="precisa_de_ajuda"><a>{{ paragrafo }}</a></p>
     </div>
-
 
     <div class="Novo_aqui">
         <p>Novo por aqui?<a>Assine agora.</a></p>
     </div>
 
 </div>
- 
+
 </template>
 
 <script>
 
-
 export default {
-    data(){
-        return{
-            titulo:'Entrar',
-            email:'',
-            senha:'',
-            paragrafo:'Precisa de ajuda?',
-            
-           
-        }
-    }
+  data() {
+    return {
+      titulo: 'Entrar',
+      email: '',
+      senha: '',
+      paragrafo: 'Precisa de ajuda?',
 
-}
+    };
+  },
+
+};
 </script>
 
 <style scoped>
 *{
     margin:0;
     padding: 0;
-    box-sizing:border-box; 
-    
+    box-sizing:border-box;
+
 }
 .container{
    background: #282626 ;
-   background-image: 
+   background-image:
    url("C:\Users\Adrian\vue-oficial-install\src\assets\netflix-servico.jpg");
-  
+
 }
 .conteudo{
     padding: 10px;
-  
+
 }.input_email,.input_senha {
     display: flex;
     flex-direction: column;
@@ -73,17 +68,15 @@ export default {
     color: #fff;
     margin-left:19px;
     font-family: sans-serif;
-   
+
  }
- .button_entrada{
+ .button_entrada {
     width:300px;
     margin: 20px;
     padding: 10px;
     background-color:#FF0000;
     border-radius: 7px;
     border: 1px;
- }
- .button_entrada{
     color:#fff;
     font-family: sans-serif;
     font-size: 18px;
@@ -114,6 +107,5 @@ export default {
  a{
     color:#fff;
  }
-
 
 </style>

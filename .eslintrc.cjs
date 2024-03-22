@@ -1,11 +1,22 @@
 /* eslint-env node */
 module.exports = {
   root: true,
-  'extends': [
+  env: {
+    node: true,
+    browser: true,
+  },
+  extends: [
     'plugin:vue/vue3-essential',
-    'eslint:recommended'
+    'airbnb-base',
   ],
   parserOptions: {
-    ecmaVersion: 'latest'
-  }
-}
+    parser: '@babel/eslint-parser',
+    ecmaVersion: 'latest',
+    requireConfigFile: false,
+  },
+  rules: {
+    'linebreak-style': 0,
+    'no-plusplus': 0,
+    'max-len': 0,
+  },
+};
