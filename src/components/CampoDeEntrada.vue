@@ -1,5 +1,6 @@
 <template>
-<div class="container" >
+   <div class="background">
+      <div class="container" >
 
     <h3 class="titulo">{{titulo}}</h3>
     <div class="conteudo">
@@ -20,7 +21,7 @@
     <div class="Novo_aqui">
         <p>Novo por aqui?<a>Assine agora.</a></p>
     </div>
-
+   </div>
 </div>
 
 </template>
@@ -48,13 +49,28 @@ export default {
     box-sizing:border-box;
 
 }
-.container{
-   background: #282626 ;
-   background-image:
-   url("C:\Users\Adrian\vue-oficial-install\src\assets\netflix-servico.jpg");
-
+.background {
+   width: 100%;
+   height: 100%;
+   background-image: url("../assets/netflix-servico.jpg");
+   background-repeat: no-repeat round;
+   position: fixed;
+   margin: 0;
+   overflow: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.conteudo{
+.container {
+   padding: 0 2rem;
+   max-width: 25%;
+   max-height: 50%;
+   height: 100vh;
+   margin: 0 auto;
+   font-weight: normal;
+   background-color: #282626;
+}
+.conteudo {
     padding: 10px;
 
 }.input_email,.input_senha {

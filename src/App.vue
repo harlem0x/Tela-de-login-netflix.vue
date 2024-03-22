@@ -11,7 +11,6 @@ import CampoDeEntradaVue from './components/CampoDeEntrada.vue';
 
 export default {
   components: {
-
     CampoDeEntradaVue,
   },
   name: 'App',
